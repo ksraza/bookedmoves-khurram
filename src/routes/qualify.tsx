@@ -5,17 +5,19 @@ import { Check, Manifest } from "@/components/funnel/ui";
 export const Route = createFileRoute("/qualify")({
   head: () => ({
     meta: [
-      { title: "Get Your Free Lead Audit — BookedMoves" },
+      { title: "Apply For The Growth System — BookedMoves" },
       {
         name: "description",
         content:
-          "Tell us about your moving company and get a free lead audit tailored to your market, volume and follow-up gaps.",
+          "Apply for the Booked Moves Growth System. Tell us about your UK moving company and we'll confirm fit and tailor the plan within one business day.",
       },
-      { property: "og:title", content: "Get Your Free Lead Audit — BookedMoves" },
+      { property: "og:title", content: "Apply For The Growth System — BookedMoves" },
       {
         property: "og:description",
-        content: "A two-minute form. We reply within one business day with your free lead audit.",
+        content: "A two-minute application. We reply within one business day with next steps.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Qualify,
@@ -27,6 +29,14 @@ const REVENUE = [
   "£25,000 – £50,000/mo",
   "£50,000 – £100,000/mo",
   "£100,000+/mo",
+];
+
+const CAPACITY = ["Yes, ready now", "Yes, within 30 days", "Not yet"];
+
+const ADS_STATUS = [
+  "No, starting fresh",
+  "Yes, but underperforming",
+  "Yes, and it's working — want to scale",
 ];
 
 const fieldClass =
@@ -75,13 +85,14 @@ function Qualify() {
             Almost there — tell us about your company
           </h1>
           <p className="mt-5 max-w-xl leading-relaxed text-paper/75">
-            A few quick details so we can tailor your free lead audit to your market, your current
-            volume, and where your follow-up is likely leaking bookings.
+            A few quick details so we can confirm you&apos;re a fit for the Growth System and tailor
+            the plan to your service area, current volume, and where enquiries are likely leaking
+            bookings.
           </p>
 
           <blockquote className="mt-7 border-l-4 border-accent bg-paper/5 px-5 py-4 text-sm leading-relaxed text-paper/90">
-            30+ qualified leads in 30 days, every one contacted within 2 minutes and fully booked —
-            or we work for free until you are (up to 30 extra days).
+            If the campaign isn&apos;t producing a clear path toward your agreed targets, we keep
+            testing, refining and optimising the system — not letting it run unattended.
           </blockquote>
 
           <ul className="mt-7 grid gap-3">
@@ -95,7 +106,7 @@ function Qualify() {
               title="Lead Manifest #0417"
               compact
               rows={[
-                { time: "0:04", label: "SMS + WhatsApp sent", status: "Sent" },
+                { time: "0:04", label: "Instant notification sent", status: "Notified" },
                 { time: "0:11", label: "Outbound call placed", status: "Connected" },
                 { time: "", label: "Job confirmed for Sat, 14:00", status: "Booked ✓" },
               ]}
@@ -109,15 +120,15 @@ function Qualify() {
               <span className="flex h-12 w-12 items-center justify-center border-2 border-accent bg-accent/10 font-mono text-xl text-accent-dark">
                 ✓
               </span>
-              <h2 className="mt-5 text-2xl text-ink">Request received</h2>
+              <h2 className="mt-5 text-2xl text-ink">Application received</h2>
               <p className="mt-3 text-sm leading-relaxed text-slate">
                 Thanks — we&apos;re reviewing your details now and will follow up by email within 1
-                business day with your free lead audit.
+                business day to confirm next steps.
               </p>
             </div>
           ) : (
             <form onSubmit={onSubmit} className="border-2 border-ink bg-paper p-8 stamp">
-              <h2 className="text-2xl text-ink">Get Your Free Audit</h2>
+              <h2 className="text-2xl text-ink">Apply For The Growth System</h2>
               <p className="mono-label mt-2 text-slate">We&apos;ll reply within 1 business day</p>
 
               <div className="mt-7 grid gap-5">
@@ -144,6 +155,12 @@ function Qualify() {
                   <input name="email" type="email" required className={fieldClass} />
                 </label>
                 <label className="block">
+                  <span className="mono-label text-slate">
+                    Primary service area / postcode(s) covered
+                  </span>
+                  <input name="area" type="text" required className={fieldClass} />
+                </label>
+                <label className="block">
                   <span className="mono-label text-slate">Current monthly revenue</span>
                   <select name="revenue" required defaultValue="" className={fieldClass}>
                     <option value="" disabled>
@@ -156,13 +173,43 @@ function Qualify() {
                     ))}
                   </select>
                 </label>
+                <label className="block">
+                  <span className="mono-label text-slate">
+                    Do you currently have capacity for additional moves?
+                  </span>
+                  <select name="capacity" required defaultValue="" className={fieldClass}>
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    {CAPACITY.map((c) => (
+                      <option key={c} value={c}>
+                        {c}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <label className="block">
+                  <span className="mono-label text-slate">
+                    Are you currently running Meta/Facebook ads?
+                  </span>
+                  <select name="ads" required defaultValue="" className={fieldClass}>
+                    <option value="" disabled>
+                      Select an option
+                    </option>
+                    {ADS_STATUS.map((a) => (
+                      <option key={a} value={a}>
+                        {a}
+                      </option>
+                    ))}
+                  </select>
+                </label>
               </div>
 
               <button
                 type="submit"
                 className="mt-7 w-full border-2 border-ink bg-ink px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--accent)]"
               >
-                Get My Free Audit
+                Submit My Application
               </button>
               <p className="mt-3 text-center font-mono text-[0.68rem] text-slate">
                 No spam. Your information is never shared.
@@ -175,7 +222,7 @@ function Qualify() {
       <footer className="border-t border-paper/20">
         <div className="shell py-6">
           <p className="font-mono text-[0.7rem] text-paper/60">
-            bookedmoves.com · Meta &amp; TikTok Ads for moving companies
+            bookedmoves.com · Meta Ads for UK moving companies
           </p>
         </div>
       </footer>
