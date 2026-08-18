@@ -165,12 +165,11 @@ function Landing() {
               </span>
             </div>
             <h1 className="mt-6 text-[2.6rem] text-ink sm:text-[3.4rem]">
-              Turn Meta Ads into a predictable pipeline of qualified moving enquiries
+              The Meta Ads System That Turned £611 Into 35 Qualified Moving Leads At £17.46 Each
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate">
-              We build and manage the complete acquisition system — offer, Meta Ads, lead
-              qualification, tracking, speed-to-lead and follow-up — so you can focus on quoting and
-              booking jobs instead of managing advertising.
+              We build and run the exact acquisition system behind that result — offer, Meta Ads,
+              lead qualification, tracking, speed-to-lead and follow-up — for your moving company.
             </p>
             <div className="mt-6 border-l-4 border-accent bg-paper-2 px-5 py-4 text-sm leading-relaxed text-ink">
               We don&apos;t promise a number of bookings that depends on factors outside our
@@ -347,7 +346,7 @@ function Landing() {
       </section>
 
       {/* VALUE STACK */}
-      <section id="offer" className="border-b-2 border-ink">
+      <section className="border-b-2 border-ink">
         <div className="shell py-16 lg:py-20">
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
@@ -415,14 +414,16 @@ function Landing() {
       </section>
 
       {/* PRICING */}
-      <section className="border-b-2 border-ink">
+      <section id="offer" className="border-b-2 border-ink">
         <div className="shell py-16 lg:py-20">
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
-              <Eyebrow>The Booked Moves Growth System™</Eyebrow>
+              <Eyebrow>The Offer</Eyebrow>
               <StepTag>Step 8 of 8</StepTag>
             </div>
-            <h2 className="mt-4 text-3xl text-ink">The offer</h2>
+            <h2 className="mt-4 text-3xl text-ink">
+              Everything Included In The Booked Moves Growth System™ This Month
+            </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             <Reveal>
@@ -449,6 +450,43 @@ function Landing() {
                 </p>
               </div>
             </Reveal>
+          </div>
+          <Reveal delay={120} className="mt-10">
+            <div className="border-2 border-ink bg-white p-7 stamp">
+              <h3 className="font-display text-xl uppercase tracking-[0.02em] text-ink">
+                What happens in your first 90 days
+              </h3>
+              <div className="mt-6 grid gap-6 sm:grid-cols-3">
+                <div>
+                  <div className="mono-label text-accent-dark">01 · Week 1–2</div>
+                  <p className="mt-2 text-sm leading-relaxed text-slate">
+                    Build The Moving Offer™ and Qualified Lead Funnel™.
+                  </p>
+                </div>
+                <div>
+                  <div className="mono-label text-accent-dark">02 · Week 2–3</div>
+                  <p className="mt-2 text-sm leading-relaxed text-slate">
+                    Launch the Meta Ads Acquisition Engine™ and Creative Testing System™.
+                  </p>
+                </div>
+                <div>
+                  <div className="mono-label text-accent-dark">03 · Ongoing</div>
+                  <p className="mt-2 text-sm leading-relaxed text-slate">
+                    Speed-to-Lead follow-up, Lead Quality Optimisation™, and Weekly Campaign
+                    Optimisation™ reporting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+          <Reveal delay={150} className="mt-6">
+            <p className="text-sm leading-relaxed text-slate">
+              I manage every account personally, which means I only take on a handful of new moving
+              companies each quarter.
+            </p>
+          </Reveal>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
           </div>
         </div>
       </section>
