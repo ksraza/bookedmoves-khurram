@@ -158,8 +158,9 @@ export function Manifest({
 
 export const MANIFEST_ROWS: Row[] = [
   { time: "0:00", label: "New lead, 3-bed local move", status: "Captured" },
-  { time: "0:04", label: "SMS + WhatsApp sent", status: "Sent" },
+  { time: "0:04", label: "Instant notification sent", status: "Notified" },
   { time: "0:11", label: "Outbound call placed", status: "Connected" },
   { time: "0:19", label: "Quote sent by email", status: "Delivered" },
   { time: "", label: "Job confirmed for Sat, 14:00", status: "Booked ✓" },
 ];
+
