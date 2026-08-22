@@ -171,11 +171,8 @@ function Landing() {
               Lead qualification, Tracking, Speed-to-lead, and Follow-up) for your moving company.
             </p>
             <div className="mt-6 border-l-4 border-accent bg-paper-2 px-5 py-4 text-sm leading-relaxed text-ink">
-              We don&apos;t promise a number of bookings that depends on factors outside our
-              control. If a campaign isn&apos;t producing a{" "}
-              <strong>clear path toward your agreed performance targets</strong>, we{" "}
-              <strong>keep testing, refining and optimising</strong> the system — not letting it run
-              unattended.
+              No lucky-month guarantees. If a campaign stalls short of your agreed targets, we keep
+              optimising at no extra cost until it&apos;s back on track.
             </div>
             <div className="mt-7 flex flex-wrap gap-3">
               <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
