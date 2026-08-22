@@ -142,9 +142,7 @@ function Landing() {
       <header className="border-b-2 border-ink bg-paper">
         <div className="shell flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center border-2 border-ink bg-ink font-mono text-sm text-paper">
-              BM
-            </span>
+            <img src={LOGO_URL} alt="BookedMoves logo" className="h-9 w-9 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-ink">
               BookedMoves
             </span>
