@@ -585,15 +585,16 @@ function Landing() {
               </div>
               <img
                 src={shiftersAllLeads.url}
-                alt="Meta Ads Manager dashboard showing 30 Shifters campaigns, £9,925.65 spend and 1,148 leads"
+                alt="Meta Ads Manager dashboard showing 30 Shifters campaigns, £9,925.65 spend, 653,059 impressions, 11,667 clicks and 1,148 leads"
                 width={1280}
                 height={800}
                 loading="lazy"
                 className="w-full border-b border-line object-cover"
               />
               <p className="px-4 py-4 font-mono text-[0.72rem] text-slate">
-                30 campaigns, £9,925.65 in Meta ad spend → 1,148 moving leads → £8.65 average cost
-                per lead — exported straight from the live ad account.
+                30 campaigns, £9,925.65 in Meta ad spend → 653,059 impressions → 11,667 clicks →
+                1,148 moving leads → £8.65 average cost per lead — exported straight from the live
+                ad account.
               </p>
             </div>
           </Reveal>
