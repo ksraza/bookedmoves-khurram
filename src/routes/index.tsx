@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import founder from "@/assets/founder.jpg";
+import founderAsset from "@/assets/founder.png.asset.json";
+import logoAsset from "@/assets/logo.png.asset.json";
 import adsManager from "@/assets/ads-manager.jpg";
 import {
   Check,
