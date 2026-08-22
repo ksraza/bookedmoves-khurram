@@ -167,8 +167,8 @@ function Landing() {
               The Meta Ads System That Turned £611 Into 35 Qualified Moving Leads At £17.46 Each
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate">
-              We build and run the exact acquisition system behind that result — offer, Meta Ads,
-              lead qualification, tracking, speed-to-lead and follow-up — for your moving company.
+              We build and run the exact acquisition system behind that result (Offer, Meta Ads,
+              Lead qualification, Tracking, Speed-to-lead, and Follow-up) for your moving company.
             </p>
             <div className="mt-6 border-l-4 border-accent bg-paper-2 px-5 py-4 text-sm leading-relaxed text-ink">
               We don&apos;t promise a number of bookings that depends on factors outside our
