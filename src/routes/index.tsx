@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FOUNDER_URL, LOGO_URL } from "@/lib/brand";
-import adsManager from "@/assets/ads-manager.jpg";
+import shiftersAllLeads from "@/assets/shifters-all-leads.png.asset.json";
 import {
   Check,
   CtaButton,
