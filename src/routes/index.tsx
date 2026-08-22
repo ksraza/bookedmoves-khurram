@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FOUNDER_URL, LOGO_URL } from "@/lib/brand";
 import shiftersAllLeads from "@/assets/shifters-all-leads.png.asset.json";
+import adDontBookMoves from "@/assets/ad-dont-book-moves-6-aug.png.asset.json";
 import {
   Check,
   CtaButton,
@@ -189,6 +190,45 @@ function Landing() {
 
           <Reveal delay={120} className="lg:pt-10">
             <Manifest title="Lead Manifest" rows={MANIFEST_ROWS} total="11 sec" />
+          </Reveal>
+        </div>
+      </section>
+
+      {/* HERO PROOF SHOT */}
+      <section className="border-b-2 border-ink bg-paper-2">
+        <div className="shell py-10 lg:py-14">
+          <Reveal>
+            <div className="mx-auto max-w-5xl">
+              <div className="flex flex-wrap items-center gap-3">
+                <Eyebrow>Live account result</Eyebrow>
+                <span className="mono-label border border-accent bg-accent/10 px-2 py-1 text-accent-dark">
+                  Exported from Meta Ads Manager
+                </span>
+              </div>
+              <h2 className="mt-4 text-2xl text-ink">The numbers behind the headline</h2>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate">
+                This is the actual Meta Ads Manager report for the campaign that produced the result
+                above — £611.15 in spend, 35 qualified leads and a £17.46 cost per lead.
+              </p>
+              <div className="mt-6 border-2 border-ink bg-white stamp">
+                <img
+                  src={adDontBookMoves.url}
+                  alt="Meta Ads Manager report showing £611.15 spend, 34,974 impressions, 688 clicks, 35 leads and £17.46 cost per lead"
+                  width={1280}
+                  height={400}
+                  loading="lazy"
+                  className="w-full object-cover"
+                />
+                <div className="flex flex-wrap items-center justify-between gap-4 border-t border-line px-4 py-4">
+                  <p className="font-mono text-[0.72rem] text-slate">
+                    £611.15 spend · 34,974 impressions · 688 clicks · 35 leads · £17.46 CPL
+                  </p>
+                  <p className="font-mono text-[0.72rem] text-slate">
+                    Source: Meta Ads Manager, 6 Aug 2026
+                  </p>
+                </div>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
