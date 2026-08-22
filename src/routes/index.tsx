@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import founderAsset from "@/assets/founder.png.asset.json";
-import logoAsset from "@/assets/logo.png.asset.json";
+import { FOUNDER_URL, LOGO_URL } from "@/lib/brand";
 import adsManager from "@/assets/ads-manager.jpg";
 import {
   Check,
@@ -214,7 +213,7 @@ function Landing() {
           <Reveal>
             <div className="border-2 border-ink bg-white p-3 stamp">
               <img
-                src={founderAsset.url}
+                src={FOUNDER_URL}
                 alt="Khurram, founder of BookedMoves"
                 width={768}
                 height={768}
@@ -544,7 +543,7 @@ function Landing() {
           <Reveal delay={80} className="mt-10">
             <div className="flex max-w-xl flex-wrap items-center gap-6 border-2 border-ink bg-white p-7 stamp">
               <img
-                src={founderAsset.url}
+                src={FOUNDER_URL}
                 alt="Khurram Shahzad Raza, Meta Ads Manager and founder of BookedMoves"
                 width={640}
                 height={640}
