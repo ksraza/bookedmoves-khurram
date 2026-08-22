@@ -1,3 +1,4 @@
+import logoAsset from "@/assets/logo.png.asset.json";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { Check, Manifest } from "@/components/funnel/ui";
@@ -55,9 +56,7 @@ function Qualify() {
       <header className="border-b-2 border-paper/25">
         <div className="shell flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <span className="flex h-9 w-9 items-center justify-center border-2 border-paper font-mono text-sm text-paper">
-              BM
-            </span>
+            <img src={logoAsset.url} alt="BookedMoves logo" className="h-9 w-9 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
               BookedMoves
             </span>
