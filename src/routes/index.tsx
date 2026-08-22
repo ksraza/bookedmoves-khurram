@@ -214,7 +214,7 @@ function Landing() {
           <Reveal>
             <div className="border-2 border-ink bg-white p-3 stamp">
               <img
-                src={founder}
+                src={founderAsset.url}
                 alt="Khurram, founder of BookedMoves"
                 width={768}
                 height={768}
@@ -544,7 +544,7 @@ function Landing() {
           <Reveal delay={80} className="mt-10">
             <div className="flex max-w-xl flex-wrap items-center gap-6 border-2 border-ink bg-white p-7 stamp">
               <img
-                src={founder}
+                src={founderAsset.url}
                 alt="Khurram Shahzad Raza, Meta Ads Manager and founder of BookedMoves"
                 width={640}
                 height={640}
