@@ -10,7 +10,6 @@ import {
   MANIFEST_ROWS,
   NumBox,
   Reveal,
-  StepTag,
 } from "@/components/funnel/ui";
 
 export const Route = createFileRoute("/")({
@@ -143,7 +142,7 @@ function Landing() {
       <header className="border-b-2 border-ink bg-paper">
         <div className="shell flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-9 w-9 object-contain" />
+            <img src={LOGO_URL} alt="BookedMoves logo" className="h-12 w-12 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-ink">
               BookedMoves
             </span>
@@ -274,7 +273,6 @@ function Landing() {
               <Check>Weekly performance reporting</Check>
             </ul>
             <div className="mt-8 flex flex-wrap items-center gap-4 border-2 border-ink bg-paper-2 p-5">
-              <StepTag>Step 2 of 8</StepTag>
               <CtaButton to="/qualify">Talk To Me Directly</CtaButton>
             </div>
           </Reveal>
@@ -287,7 +285,6 @@ function Landing() {
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>Why most moving companies don&apos;t have a lead problem</Eyebrow>
-              <StepTag>Step 3 of 8</StepTag>
             </div>
             <h2 className="mt-4 max-w-3xl text-3xl text-ink">Where the bookings leak out</h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-slate">
@@ -321,7 +318,6 @@ function Landing() {
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>The Booked Moves Growth System™</Eyebrow>
-              <StepTag>Step 4 of 8</StepTag>
             </div>
             <h2 className="mt-4 max-w-3xl text-3xl text-ink">Seven modules, one system</h2>
             <p className="mt-4 max-w-3xl leading-relaxed text-slate">
@@ -352,7 +348,6 @@ function Landing() {
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>What you get</Eyebrow>
-              <StepTag>Step 6 of 8</StepTag>
             </div>
             <h2 className="mt-4 max-w-3xl text-3xl text-ink">A full acquisition system</h2>
             <p className="mt-4 max-w-2xl leading-relaxed text-slate">
@@ -384,7 +379,6 @@ function Landing() {
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>Who this is for</Eyebrow>
-              <StepTag>Step 7 of 8</StepTag>
             </div>
             <h2 className="mt-4 text-3xl text-ink">Fit check</h2>
           </Reveal>
@@ -420,7 +414,6 @@ function Landing() {
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>The Offer</Eyebrow>
-              <StepTag>Step 8 of 8</StepTag>
             </div>
             <h2 className="mt-4 text-3xl text-ink">
               Everything Included In The Booked Moves Growth System™ This Month
@@ -540,7 +533,6 @@ function Landing() {
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>Live account proof</Eyebrow>
-              <StepTag>Step 9 of 10</StepTag>
             </div>
             <h2 className="mt-4 text-3xl text-ink">See the account, not the promise</h2>
           </Reveal>
@@ -578,11 +570,10 @@ function Landing() {
       <footer className="bg-ink">
         <div className="shell flex flex-wrap items-center justify-between gap-6 py-12">
           <div className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-9 w-9 object-contain" />
+            <img src={LOGO_URL} alt="BookedMoves logo" className="h-12 w-12 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
               BookedMoves
             </span>
-            <StepTag>Step 10 of 10</StepTag>
           </div>
           <CtaButton to="/qualify" variant="onDark">
             Apply For The Growth System
