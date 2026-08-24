@@ -224,6 +224,9 @@ function Landing() {
                   </p>
                 </div>
               </div>
+              <div className="mt-8">
+                <CtaButton to="/qualify">Apply For The System</CtaButton>
+              </div>
             </div>
           </Reveal>
         </div>
