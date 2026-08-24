@@ -540,7 +540,7 @@ function Landing() {
             </div>
           </Reveal>
           <div className="mt-8">
-            <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
+            <CtaButton to="/qualify">Yes, I Want This System</CtaButton>
           </div>
         </div>
       </section>
