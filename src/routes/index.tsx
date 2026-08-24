@@ -224,6 +224,9 @@ function Landing() {
                   </p>
                 </div>
               </div>
+              <div className="mt-8">
+                <CtaButton to="/qualify">Apply For The System</CtaButton>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -238,6 +241,9 @@ function Landing() {
               <div className="mono-label mt-2 text-slate">{s.l}</div>
             </div>
           ))}
+          <div className="col-span-2 flex justify-center py-6 lg:col-span-4">
+            <CtaButton to="/qualify">Claim Your Slot</CtaButton>
+          </div>
         </div>
       </section>
 
@@ -273,7 +279,7 @@ function Landing() {
               <Check>Weekly performance reporting</Check>
             </ul>
             <div className="mt-8 flex flex-wrap items-center gap-4 border-2 border-ink bg-paper-2 p-5">
-              <CtaButton to="/qualify">Talk To Me Directly</CtaButton>
+              <CtaButton to="/qualify">Get My Free Audit</CtaButton>
             </div>
           </Reveal>
         </div>
@@ -309,6 +315,9 @@ function Landing() {
               </Reveal>
             ))}
           </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Talk To Khurram</CtaButton>
+          </div>
         </div>
       </section>
 
@@ -338,6 +347,9 @@ function Landing() {
                 </div>
               </Reveal>
             ))}
+          </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Start My 90 Days</CtaButton>
           </div>
         </div>
       </section>
@@ -369,6 +381,9 @@ function Landing() {
                 </div>
               </Reveal>
             ))}
+          </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Get My Growth Plan</CtaButton>
           </div>
         </div>
       </section>
@@ -405,6 +420,9 @@ function Landing() {
               </div>
             </div>
           </Reveal>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Book My Strategy Call</CtaButton>
+          </div>
         </div>
       </section>
 
@@ -428,9 +446,9 @@ function Landing() {
                   Advertising budget is separate.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-slate">
-                  Recommended starting ad budget:{" "}
-                  <strong className="text-ink">£20–£50/day</strong> depending on service area,
-                  competition, capacity and growth target.
+                  Recommended Minimum starting ad budget: from{" "}
+                  <strong className="text-ink">£50/day</strong> depending on service area, competition,
+                  capacity and growth target.
                 </p>
               </div>
             </Reveal>
@@ -522,7 +540,7 @@ function Landing() {
             </div>
           </Reveal>
           <div className="mt-8">
-            <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
+            <CtaButton to="/qualify">Yes, I Want This System</CtaButton>
           </div>
         </div>
       </section>
@@ -561,7 +579,7 @@ function Landing() {
             </div>
           </Reveal>
           <div className="mt-8">
-            <CtaButton to="/qualify">Get These Results For My Company</CtaButton>
+            <CtaButton to="/qualify">Start With BookedMoves</CtaButton>
           </div>
         </div>
       </section>
