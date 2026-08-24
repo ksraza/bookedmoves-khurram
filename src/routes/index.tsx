@@ -315,6 +315,9 @@ function Landing() {
               </Reveal>
             ))}
           </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Talk To Khurram</CtaButton>
+          </div>
         </div>
       </section>
 
