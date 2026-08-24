@@ -534,39 +534,6 @@ function Landing() {
         </div>
       </section>
 
-      {/* FOUNDER SPOTLIGHT */}
-      <section className="border-b-2 border-ink">
-        <div className="shell py-16 lg:py-20">
-          <Reveal>
-            <Eyebrow>Your account, run by one person</Eyebrow>
-            <h2 className="mt-4 text-3xl text-ink">No account handoffs</h2>
-          </Reveal>
-          <Reveal delay={80} className="mt-10">
-            <div className="flex max-w-xl flex-wrap items-center gap-6 border-2 border-ink bg-white p-7 stamp">
-              <img
-                src={FOUNDER_URL}
-                alt="Khurram Shahzad Raza, Meta Ads Manager and founder of BookedMoves"
-                width={640}
-                height={640}
-                loading="lazy"
-                className="h-28 w-28 rounded-full border-2 border-ink object-cover"
-              />
-              <div>
-                <div className="font-display text-xl uppercase tracking-[0.02em] text-ink">
-                  Khurram Shahzad Raza
-                </div>
-                <div className="mono-label mt-2 text-slate">
-                  Meta Ads Manager &amp; Founder, BookedMoves
-                </div>
-              </div>
-            </div>
-          </Reveal>
-          <div className="mt-8">
-            <CtaButton to="/qualify">Put A Face To Your Ad Account</CtaButton>
-          </div>
-        </div>
-      </section>
-
       {/* PROOF SHOT */}
       <section className="border-b-2 border-ink bg-paper-2">
         <div className="shell py-16 lg:py-20">
