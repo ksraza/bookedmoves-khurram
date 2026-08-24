@@ -241,6 +241,9 @@ function Landing() {
               <div className="mono-label mt-2 text-slate">{s.l}</div>
             </div>
           ))}
+          <div className="col-span-2 flex justify-center py-6 lg:col-span-4">
+            <CtaButton to="/qualify">Claim Your Slot</CtaButton>
+          </div>
         </div>
       </section>
 
