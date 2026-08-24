@@ -279,7 +279,7 @@ function Landing() {
               <Check>Weekly performance reporting</Check>
             </ul>
             <div className="mt-8 flex flex-wrap items-center gap-4 border-2 border-ink bg-paper-2 p-5">
-              <CtaButton to="/qualify">Talk To Me Directly</CtaButton>
+              <CtaButton to="/qualify">Get My Free Audit</CtaButton>
             </div>
           </Reveal>
         </div>
