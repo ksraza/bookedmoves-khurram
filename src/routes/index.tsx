@@ -420,6 +420,9 @@ function Landing() {
               </div>
             </div>
           </Reveal>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Book My Strategy Call</CtaButton>
+          </div>
         </div>
       </section>
 
