@@ -382,6 +382,9 @@ function Landing() {
               </Reveal>
             ))}
           </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Get My Growth Plan</CtaButton>
+          </div>
         </div>
       </section>
 
