@@ -446,9 +446,9 @@ function Landing() {
                   Advertising budget is separate.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-slate">
-                  Recommended starting ad budget:{" "}
-                  <strong className="text-ink">£20–£50/day</strong> depending on service area,
-                  competition, capacity and growth target.
+                  Recommended Minimum starting ad budget: from{" "}
+                  <strong className="text-ink">£50/day</strong> depending on service area, competition,
+                  capacity and growth target.
                 </p>
               </div>
             </Reveal>
