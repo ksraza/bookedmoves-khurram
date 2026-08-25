@@ -191,7 +191,7 @@ function Qualify() {
               </div>
 
               <p className="mt-5 font-mono text-[0.68rem] text-slate">
-                All questions are mandatory — don&apos;t submit the form until all questions are answered.
+                All questions are mandatory.
               </p>
 
               <button
