@@ -190,6 +190,10 @@ function Qualify() {
                 </label>
               </div>
 
+              <p className="mt-5 font-mono text-[0.68rem] text-slate">
+                All questions are mandatory — don&apos;t submit the form until all questions are answered.
+              </p>
+
               <button
                 type="submit"
                 className="mt-7 w-full border-2 border-ink bg-ink px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--accent)]"
