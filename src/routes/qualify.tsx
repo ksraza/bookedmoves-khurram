@@ -133,11 +133,11 @@ function Qualify() {
 
               <div className="mt-7 grid gap-5">
                 <label className="block">
-                  <span className="mono-label text-slate">Company name</span>
+                  <span className="mono-label text-slate">Moving Company name</span>
                   <input name="company" type="text" required className={fieldClass} />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Company website</span>
+                  <span className="mono-label text-slate">Moving Company website</span>
                   <input
                     name="website"
                     type="url"
@@ -151,8 +151,18 @@ function Qualify() {
                   <input name="name" type="text" required className={fieldClass} />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Your email</span>
+                  <span className="mono-label text-slate">Business Email</span>
                   <input name="email" type="email" required className={fieldClass} />
+                </label>
+                <label className="block">
+                  <span className="mono-label text-slate">Business Whatsapp</span>
+                  <input
+                    name="whatsapp"
+                    type="tel"
+                    placeholder="+44..."
+                    required
+                    className={fieldClass}
+                  />
                 </label>
                 <label className="block">
                   <span className="mono-label text-slate">
