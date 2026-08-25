@@ -32,7 +32,7 @@ const REVENUE = [
   "£100,000+/mo",
 ];
 
-const CAPACITY = ["Yes, ready now", "Yes, within 30 days", "Not yet"];
+
 
 const ADS_STATUS = [
   "No, starting fresh",
@@ -81,17 +81,18 @@ function Qualify() {
       <main className="shell grid gap-12 pb-20 pt-6 lg:grid-cols-[1.05fr_1fr]">
         <div>
           <h1 className="text-[2.2rem] text-paper sm:text-[2.8rem]">
-            Almost there — tell us about your company
+            Almost there — tell us about your moving company
           </h1>
           <p className="mt-5 max-w-xl leading-relaxed text-paper/75">
-            A few quick details so we can confirm you&apos;re a fit for the Growth System and tailor
-            the plan to your service area, current volume, and where enquiries are likely leaking
-            bookings.
+            Give us the few details below, and we&apos;ll tell you, honestly, if BookedMoves is the right
+            fit. So instead of a generic pitch, you get a plan built around your exact service area,
+            your current lead volume, and the specific point where your bookings are slipping through.
           </p>
 
           <blockquote className="mt-7 border-l-4 border-accent bg-paper/5 px-5 py-4 text-sm leading-relaxed text-paper/90">
-            If the campaign isn&apos;t producing a clear path toward your agreed targets, we keep
-            testing, refining and optimising the system — not letting it run unattended.
+            If BookedMoves Growth System&trade; stalls short of your agreed targets, we keep optimising
+            completely FREE — until it&apos;s back on track. No lucky-month guarantees, just continued work
+            until it performs.
           </blockquote>
 
           <ul className="mt-7 grid gap-3">
@@ -127,7 +128,7 @@ function Qualify() {
             </div>
           ) : (
             <form onSubmit={onSubmit} className="border-2 border-ink bg-paper p-8 stamp">
-              <h2 className="text-2xl text-ink">Apply For The Growth System</h2>
+              <h2 className="text-2xl text-ink">Get Your Growth Plan: BookedMoves System&trade;</h2>
               <p className="mono-label mt-2 text-slate">We&apos;ll reply within 1 business day</p>
 
               <div className="mt-7 grid gap-5">
@@ -174,21 +175,6 @@ function Qualify() {
                 </label>
                 <label className="block">
                   <span className="mono-label text-slate">
-                    Do you currently have capacity for additional moves?
-                  </span>
-                  <select name="capacity" required defaultValue="" className={fieldClass}>
-                    <option value="" disabled>
-                      Select an option
-                    </option>
-                    {CAPACITY.map((c) => (
-                      <option key={c} value={c}>
-                        {c}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <label className="block">
-                  <span className="mono-label text-slate">
                     Are you currently running Meta/Facebook ads?
                   </span>
                   <select name="ads" required defaultValue="" className={fieldClass}>
@@ -208,7 +194,7 @@ function Qualify() {
                 type="submit"
                 className="mt-7 w-full border-2 border-ink bg-ink px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--accent)]"
               >
-                Submit My Application
+                Yes, Build My System
               </button>
               <p className="mt-3 text-center font-mono text-[0.68rem] text-slate">
                 No spam. Your information is never shared.
