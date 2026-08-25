@@ -142,7 +142,7 @@ function Landing() {
       <header className="border-b-2 border-ink bg-paper">
         <div className="shell flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-12 w-12 object-contain" />
+            <img src={LOGO_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-ink">
               BookedMoves
             </span>
@@ -155,12 +155,9 @@ function Landing() {
       <section className="border-b-2 border-ink">
         <div className="shell grid gap-12 py-16 lg:grid-cols-[1.15fr_1fr] lg:py-24">
           <Reveal>
-            <Eyebrow>Meta Ads for UK Moving Companies</Eyebrow>
             <div className="mt-5 inline-flex items-center gap-2 border-2 border-accent bg-accent/10 px-3 py-1.5">
               <span className="live-dot inline-block h-[7px] w-[7px] rounded-full bg-green" />
-              <span className="mono-label text-accent-dark">
-                The Booked Moves Growth System™
-              </span>
+              <span className="mono-label text-accent-dark">Our Commitment</span>
             </div>
             <h1 className="mt-6 text-[2.6rem] text-ink sm:text-[3.4rem]">
               The Exact Growth System That Turned £611 Into 35 Qualified Moving Leads At £17.46 Each
@@ -588,7 +585,7 @@ function Landing() {
       <footer className="bg-ink">
         <div className="shell flex flex-wrap items-center justify-between gap-6 py-12">
           <div className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-12 w-12 object-contain" />
+            <img src={LOGO_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
               BookedMoves
             </span>
