@@ -585,7 +585,7 @@ function Landing() {
       <footer className="bg-ink">
         <div className="shell flex flex-wrap items-center justify-between gap-6 py-12">
           <div className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-12 w-12 object-contain" />
+            <img src={LOGO_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
               BookedMoves
             </span>
