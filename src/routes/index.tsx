@@ -163,7 +163,7 @@ function Landing() {
               </span>
             </div>
             <h1 className="mt-6 text-[2.6rem] text-ink sm:text-[3.4rem]">
-              The Meta Ads System That Turned £611 Into 35 Qualified Moving Leads At £17.46 Each
+              The Exact Growth System That Turned £611 Into 35 Qualified Moving Leads At £17.46 Each
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate">
               We build and run the exact acquisition system behind that result (Offer, Meta Ads,
