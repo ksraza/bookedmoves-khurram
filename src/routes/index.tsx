@@ -424,7 +424,7 @@ function Landing() {
               <Eyebrow>The Offer</Eyebrow>
             </div>
             <h2 className="mt-4 text-3xl text-ink">
-              Everything Included In The Booked Moves Growth System™ This Month
+              Everything Included In The BookedMoves Growth System™ This Month
             </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
