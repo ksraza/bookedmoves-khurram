@@ -12,7 +12,7 @@ export const Route = createFileRoute("/qualify")({
       {
         name: "description",
         content:
-          "Apply for the Booked Moves Growth System. Tell us about your UK moving company and we'll confirm fit and tailor the plan within one business day.",
+          "Apply for the BookedMoves Growth System. Tell us about your UK moving company and we'll confirm fit and tailor the plan within one business day.",
       },
       { property: "og:title", content: "Apply For The Growth System — BookedMoves" },
       {

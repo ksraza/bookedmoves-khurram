@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "The Booked Moves Growth System™ — a complete acquisition system turning Meta Ads into a predictable pipeline of qualified moving enquiries.",
+          "The BookedMoves Growth System™ — a complete acquisition system turning Meta Ads into a predictable pipeline of qualified moving enquiries.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -316,7 +316,7 @@ function Landing() {
         <div className="shell py-16 lg:py-20">
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
-              <Eyebrow>The Booked Moves Growth System™</Eyebrow>
+              <Eyebrow>The BookedMoves Growth System™</Eyebrow>
             </div>
             <h2 className="mt-4 max-w-3xl text-3xl text-ink">Five modules, one system</h2>
             <p className="mt-4 max-w-3xl leading-relaxed text-slate">
@@ -424,7 +424,7 @@ function Landing() {
               <Eyebrow>The Offer</Eyebrow>
             </div>
             <h2 className="mt-4 text-3xl text-ink">
-              Everything Included In The Booked Moves Growth System™ This Month
+              Everything Included In The BookedMoves Growth System™ This Month
             </h2>
           </Reveal>
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
