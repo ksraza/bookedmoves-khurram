@@ -361,40 +361,6 @@ function Landing() {
         </div>
       </section>
 
-      {/* VALUE STACK */}
-      <section className="border-b-2 border-ink">
-        <div className="shell py-16 lg:py-20">
-          <Reveal>
-            <div className="flex flex-wrap items-center gap-4">
-              <Eyebrow>What you get</Eyebrow>
-            </div>
-            <h2 className="mt-4 max-w-3xl text-3xl text-ink">A full acquisition system</h2>
-            <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-              You&apos;re not buying &lsquo;someone to manage Facebook Ads.&rsquo; You&apos;re
-              getting a full acquisition system.
-            </p>
-          </Reveal>
-          <div className="mt-10 grid gap-px border-2 border-ink bg-line sm:grid-cols-2">
-            {VALUE_STACK.map((v, i) => (
-              <Reveal key={v.n} delay={i * 40}>
-                <div className="flex h-full items-start gap-4 bg-white px-5 py-5">
-                  <NumBox n={v.n} />
-                  <div>
-                    <div className="font-display text-lg uppercase tracking-[0.02em] text-ink">
-                      {v.t}
-                    </div>
-                    <p className="mt-1.5 text-sm leading-relaxed text-slate">{v.d}</p>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <div className="mt-8">
-            <CtaButton to="/qualify">Get My Growth Plan</CtaButton>
-          </div>
-        </div>
-      </section>
-
       {/* WHO THIS IS FOR */}
       <section className="border-b-2 border-ink bg-paper-2">
         <div className="shell py-16 lg:py-20">
@@ -429,6 +395,40 @@ function Landing() {
           </Reveal>
           <div className="mt-8">
             <CtaButton to="/qualify">Book My Strategy Call</CtaButton>
+          </div>
+        </div>
+      </section>
+
+      {/* VALUE STACK */}
+      <section className="border-b-2 border-ink">
+        <div className="shell py-16 lg:py-20">
+          <Reveal>
+            <div className="flex flex-wrap items-center gap-4">
+              <Eyebrow>What you get</Eyebrow>
+            </div>
+            <h2 className="mt-4 max-w-3xl text-3xl text-ink">A full acquisition system</h2>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+              You&apos;re not buying &lsquo;someone to manage Facebook Ads.&rsquo; You&apos;re
+              getting a full acquisition system.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-px border-2 border-ink bg-line sm:grid-cols-2">
+            {VALUE_STACK.map((v, i) => (
+              <Reveal key={v.n} delay={i * 40}>
+                <div className="flex h-full items-start gap-4 bg-white px-5 py-5">
+                  <NumBox n={v.n} />
+                  <div>
+                    <div className="font-display text-lg uppercase tracking-[0.02em] text-ink">
+                      {v.t}
+                    </div>
+                    <p className="mt-1.5 text-sm leading-relaxed text-slate">{v.d}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Get My Growth Plan</CtaButton>
           </div>
         </div>
       </section>
