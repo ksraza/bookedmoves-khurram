@@ -546,7 +546,12 @@ function Landing() {
             Apply For The Growth System
           </CtaButton>
         </div>
-        <div className="shell border-t border-paper/20 py-5">
+        <div className="shell flex flex-wrap items-center gap-3 border-t border-paper/20 py-5">
+          <img
+            src={LOGO_URL}
+            alt="BookedMoves logo"
+            className="h-8 w-8 object-contain opacity-70"
+          />
           <p className="font-mono text-[0.7rem] text-paper/60">
             © 2026 BookedMoves. All rights reserved. ·{" "}
             <Link to="/privacy" className="underline hover:text-paper">
