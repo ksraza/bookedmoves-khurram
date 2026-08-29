@@ -66,21 +66,11 @@ const MODULES = [
   },
   {
     n: "04",
-    t: "Creative Testing System™",
-    d: "Practical, low-cost creative concepts tested around how moving customers actually think — pain-based, price-based, problem-based, trust-based, offer-based and proof-based hooks.",
-  },
-  {
-    n: "05",
     t: "Speed-to-Lead System™",
     d: "Immediate notification and fast follow-up the moment a lead lands, with SMS/WhatsApp/email automation where appropriate — the faster you respond, the less opportunity you leave for competitors.",
   },
   {
-    n: "06",
-    t: "Lead Quality Optimisation™",
-    d: "We track spend → enquiries → cost per enquiry → qualified enquiries → quotes → bookings. Cheap leads that don't convert get investigated, not celebrated.",
-  },
-  {
-    n: "07",
+    n: "05",
     t: "Weekly Campaign Optimisation™",
     d: "Every week we review spend, leads, CPL, lead quality, creative and audience performance, and budget allocation — then scale what works and cut what doesn't.",
   },
@@ -325,7 +315,7 @@ function Landing() {
             <div className="flex flex-wrap items-center gap-4">
               <Eyebrow>The Booked Moves Growth System™</Eyebrow>
             </div>
-            <h2 className="mt-4 max-w-3xl text-3xl text-ink">Seven modules, one system</h2>
+            <h2 className="mt-4 max-w-3xl text-3xl text-ink">Five modules, one system</h2>
             <p className="mt-4 max-w-3xl leading-relaxed text-slate">
               Not generic Meta Ads management — a complete acquisition system built specifically for
               how people actually book a mover: Offer → Meta Ads → Lead Qualification → Tracking →
