@@ -24,7 +24,7 @@ export type Database = {
           id: string
           revenue: string
           service_area: string
-          website: string
+          website: string | null
           whatsapp: string
         }
         Insert: {
@@ -36,7 +36,7 @@ export type Database = {
           id?: string
           revenue: string
           service_area: string
-          website: string
+          website?: string | null
           whatsapp: string
         }
         Update: {
@@ -48,7 +48,7 @@ export type Database = {
           id?: string
           revenue?: string
           service_area?: string
-          website?: string
+          website?: string | null
           whatsapp?: string
         }
         Relationships: []

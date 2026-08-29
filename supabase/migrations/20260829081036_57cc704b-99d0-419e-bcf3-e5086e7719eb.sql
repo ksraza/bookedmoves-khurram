@@ -1,0 +1,1 @@
+ALTER TABLE public.leads ALTER COLUMN website DROP NOT NULL;
