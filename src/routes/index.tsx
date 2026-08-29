@@ -108,6 +108,25 @@ const FIT_NO = [
   "Wants a guaranteed number of booked moves regardless of sales performance",
 ];
 
+const FAQS = [
+  {
+    q: "How fast will I see results?",
+    a: "Most clients see their first qualified leads within the first 7–14 days of launch. The first 90 days are treated as a structured optimisation cycle: we test offers, audiences and creative, then scale what proves cheapest per qualified lead.",
+  },
+  {
+    q: "Do you work with small moving companies or only big ones?",
+    a: "We work with operating moving companies of all sizes — from single-van local movers to multi-branch teams. What matters more than size is capacity: you need to be able to answer new enquiries quickly and quote them properly.",
+  },
+  {
+    q: "How much should I budget for ads?",
+    a: "Advertising budget is separate from management. A recommended minimum starting ad budget is from £50/day, depending on your service area, competition, capacity and growth target. We’ll agree a realistic starting budget before anything goes live.",
+  },
+  {
+    q: "How do I get started?",
+    a: "Fill out the short application, then we’ll review your service area, current lead volume and capacity. If it looks like a fit, we’ll book a strategy call, build your custom acquisition plan, and launch the first campaign within days.",
+  },
+];
+
 
 function Landing() {
   return (
