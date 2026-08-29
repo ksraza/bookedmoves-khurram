@@ -248,7 +248,25 @@ function Qualify() {
       </main>
 
       <footer className="border-t border-paper/20">
-        <div className="shell py-6">
+        <div className="shell flex flex-wrap items-center justify-between gap-6 py-10">
+          <div className="flex items-center gap-3">
+            <img
+              src={LOGO_WHITE_URL}
+              alt="BookedMoves logo"
+              className="h-16 w-16 object-contain"
+            />
+            <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
+              BookedMoves
+            </span>
+          </div>
+          <Link
+            to="/qualify"
+            className="border-2 border-paper bg-paper px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--green)]"
+          >
+            Apply For The Growth System
+          </Link>
+        </div>
+        <div className="shell border-t border-paper/20 py-5">
           <p className="font-mono text-[0.7rem] text-paper/60">
             © 2026 BookedMoves. All rights reserved. ·{" "}
             <Link to="/privacy" className="underline hover:text-paper">
