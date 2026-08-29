@@ -416,7 +416,104 @@ function Landing() {
         </div>
       </section>
 
+      {/* CASE-STUDY HIGHLIGHTS */}
+      <section className="border-b-2 border-ink bg-paper-2">
+        <div className="shell py-16 lg:py-20">
+          <Reveal>
+            <div className="flex flex-wrap items-center gap-4">
+              <Eyebrow>Client results</Eyebrow>
+              <span className="mono-label border border-accent bg-accent/10 px-2 py-1 text-accent-dark">
+                Verified account data
+              </span>
+            </div>
+            <h2 className="mt-4 max-w-3xl text-3xl text-ink">Proof from live accounts</h2>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+              These are the actual numbers pulled from Meta Ads Manager — not mockups, not
+              cherry-picked best days.
+            </p>
+          </Reveal>
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            <Reveal delay={60}>
+              <div className="h-full border-2 border-ink bg-white p-6 stamp">
+                <span className="mono-label text-slate">Case study 01</span>
+                <div className="mt-4 font-display text-3xl uppercase tracking-[0.02em] text-ink">
+                  1,148
+                </div>
+                <div className="mono-label mt-1 text-accent-dark">Qualified moving leads</div>
+                <ul className="mt-5 grid gap-2.5">
+                  <Check>£9,925.65 total Meta ad spend</Check>
+                  <Check>653,059 impressions · 11,667 clicks</Check>
+                  <Check>£8.65 average cost per lead</Check>
+                  <Check>30 active campaigns managed</Check>
+                </ul>
+              </div>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="h-full border-2 border-ink bg-white p-6 stamp">
+                <span className="mono-label text-slate">Case study 02</span>
+                <div className="mt-4 font-display text-3xl uppercase tracking-[0.02em] text-ink">
+                  35
+                </div>
+                <div className="mono-label mt-1 text-accent-dark">Leads from £611 spend</div>
+                <ul className="mt-5 grid gap-2.5">
+                  <Check>£17.46 average cost per lead</Check>
+                  <Check>34,974 impressions · 688 clicks</Check>
+                  <Check>Complete acquisition system deployed</Check>
+                  <Check>Exported live from Meta Ads Manager</Check>
+                </ul>
+              </div>
+            </Reveal>
+            <Reveal delay={180}>
+              <div className="h-full border-2 border-ink bg-white p-6 stamp">
+                <span className="mono-label text-slate">Typical 90-day outcome</span>
+                <div className="mt-4 font-display text-3xl uppercase tracking-[0.02em] text-ink">
+                  Pipeline
+                </div>
+                <div className="mono-label mt-1 text-accent-dark">Predictable enquiries</div>
+                <ul className="mt-5 grid gap-2.5">
+                  <Check>Qualified leads before they reach you</Check>
+                  <Check>Speed-to-lead system cuts response time</Check>
+                  <Check>Weekly optimisation keeps CPL trending down</Check>
+                  <Check>Full-funnel tracking from click to booking</Check>
+                </ul>
+              </div>
+            </Reveal>
+          </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
+          </div>
+        </div>
+      </section>
 
+      {/* RESULTS BULLETS */}
+      <section className="border-b-2 border-ink">
+        <div className="shell py-16 lg:py-20">
+          <Reveal>
+            <div className="flex flex-wrap items-center gap-4">
+              <Eyebrow>What changes</Eyebrow>
+            </div>
+            <h2 className="mt-4 max-w-3xl text-3xl text-ink">Results you can measure</h2>
+          </Reveal>
+          <Reveal delay={80} className="mt-8">
+            <div className="grid gap-px border-2 border-ink bg-line sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { v: "£8.65", l: "Lowest verified cost per lead" },
+                { v: "1,148+", l: "Leads generated in a single live account" },
+                { v: "11 sec", l: "From lead capture to first contact" },
+                { v: "90 days", l: "To a stable, predictable pipeline" },
+              ].map((r, i) => (
+                <div key={r.l} className="border-b border-line bg-white px-5 py-6 last:border-b-0 sm:border-b-0">
+                  <div className="font-display text-2xl text-ink">{r.v}</div>
+                  <div className="mono-label mt-2 text-slate">{r.l}</div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Book My Strategy Call</CtaButton>
+          </div>
+        </div>
+      </section>
 
       {/* PROOF SHOT */}
       <section className="border-b-2 border-ink bg-paper-2">
