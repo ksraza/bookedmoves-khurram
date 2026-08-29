@@ -157,7 +157,7 @@ function Landing() {
           <Reveal>
             <div className="mt-5 inline-flex items-center gap-2 border-2 border-accent bg-accent/10 px-3 py-1.5">
               <span className="live-dot inline-block h-[7px] w-[7px] rounded-full bg-green" />
-              <span className="mono-label text-accent-dark">Our Commitment</span>
+              <span className="mono-label text-accent-dark">The BookedMoves Growth System™</span>
             </div>
             <h1 className="mt-6 text-[2.6rem] text-ink sm:text-[3.4rem]">
               The Exact Growth System That Turned £611 Into 35 Qualified Moving Leads At £17.46 Each
