@@ -163,12 +163,11 @@ function Qualify() {
                   <input name="company" type="text" required className={fieldClass} />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Moving Company website</span>
+                  <span className="mono-label text-slate">Moving Company website (if available)</span>
                   <input
                     name="website"
                     type="url"
                     placeholder="https://"
-                    required
                     className={fieldClass}
                   />
                 </label>

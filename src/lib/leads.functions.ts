@@ -3,7 +3,7 @@ import { z } from "zod";
 
 const leadSchema = z.object({
   company: z.string().min(1).max(200),
-  website: z.string().min(1).max(300),
+  website: z.string().max(300).optional(),
   name: z.string().min(1).max(200),
   email: z.string().email().max(300),
   whatsapp: z.string().min(1).max(50),
@@ -26,7 +26,7 @@ function buildRawEmail(lead: Lead): string {
     "A new application just came in through the /qualify form:",
     "",
     `Moving Company: ${lead.company}`,
-    `Website: ${lead.website}`,
+    `Website: ${lead.website || "Not provided"}`,
     `Contact name: ${lead.name}`,
     `Business Email: ${lead.email}`,
     `Business WhatsApp: ${lead.whatsapp}`,
