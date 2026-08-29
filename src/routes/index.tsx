@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { FOUNDER_URL, LOGO_URL } from "@/lib/brand";
+import { FOUNDER_URL, LOGO_URL, LOGO_WHITE_URL } from "@/lib/brand";
 import shiftersAllLeads from "@/assets/shifters-all-leads.png.asset.json";
 import adDontBookMoves from "@/assets/ad-dont-book-moves-6-aug.png.asset.json";
 import {
@@ -537,7 +537,7 @@ function Landing() {
       <footer className="bg-ink">
         <div className="shell flex flex-wrap items-center justify-between gap-6 py-12">
           <div className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
+            <img src={LOGO_WHITE_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
             <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
               BookedMoves
             </span>
@@ -548,7 +548,7 @@ function Landing() {
         </div>
         <div className="shell flex flex-wrap items-center gap-3 border-t border-paper/20 py-5">
           <img
-            src={LOGO_URL}
+            src={LOGO_WHITE_URL}
             alt="BookedMoves logo"
             className="h-8 w-8 object-contain opacity-70"
           />
