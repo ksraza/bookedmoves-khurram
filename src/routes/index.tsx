@@ -122,6 +122,10 @@ const FAQS = [
     a: "Advertising budget is separate from management. A recommended minimum starting ad budget is from £50/day, depending on your service area, competition, capacity and growth target. We’ll agree a realistic starting budget before anything goes live.",
   },
   {
+    q: "Will this growth system really help me get qualified leads in the winter?",
+    a: "Yes. Winter demand for moving services naturally dips, but the system is built to keep your pipeline full through targeted offers, retargeting warm traffic, and consistent creative testing. We optimise for qualified enquiries regardless of season, not just peak-month volume.",
+  },
+  {
     q: "How do I get started?",
     a: "Fill out the short application, then we’ll review your service area, current lead volume and capacity. If it looks like a fit, we’ll book a strategy call, build your custom acquisition plan, and launch the first campaign within days.",
   },
