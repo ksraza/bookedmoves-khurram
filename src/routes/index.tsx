@@ -544,6 +544,29 @@ function Landing() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section className="border-b-2 border-ink bg-paper-2">
+        <div className="shell py-16 lg:py-20">
+          <Reveal>
+            <Eyebrow>FAQ</Eyebrow>
+            <h2 className="mt-4 max-w-3xl text-3xl text-ink">Common questions</h2>
+          </Reveal>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            {FAQS.map((f, i) => (
+              <Reveal key={f.q} delay={i * 60}>
+                <div className="h-full border-2 border-ink bg-white p-6 stamp">
+                  <h3 className="text-lg text-ink">{f.q}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-slate">{f.a}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-8">
+            <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer className="bg-ink">
         <div className="shell flex flex-wrap items-center justify-between gap-6 py-12">
