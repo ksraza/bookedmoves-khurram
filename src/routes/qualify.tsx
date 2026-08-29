@@ -159,7 +159,7 @@ function Qualify() {
 
               <div className="mt-7 grid gap-5">
                 <label className="block">
-                  <span className="mono-label text-slate">Moving Company name</span>
+                  <span className="mono-label text-slate">Moving Company name<span className="text-accent">*</span></span>
                   <input name="company" type="text" required className={fieldClass} />
                 </label>
                 <label className="block">
@@ -172,15 +172,15 @@ function Qualify() {
                   />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Full name</span>
+                  <span className="mono-label text-slate">Full name<span className="text-accent">*</span></span>
                   <input name="name" type="text" required className={fieldClass} />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Business Email</span>
+                  <span className="mono-label text-slate">Business Email<span className="text-accent">*</span></span>
                   <input name="email" type="email" required className={fieldClass} />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Business Whatsapp</span>
+                  <span className="mono-label text-slate">Business Whatsapp<span className="text-accent">*</span></span>
                   <input
                     name="whatsapp"
                     type="tel"
@@ -191,12 +191,12 @@ function Qualify() {
                 </label>
                 <label className="block">
                   <span className="mono-label text-slate">
-                    Primary service area / postcode(s) covered
+                    Primary service area / postcode(s) covered<span className="text-accent">*</span>
                   </span>
                   <input name="area" type="text" required className={fieldClass} />
                 </label>
                 <label className="block">
-                  <span className="mono-label text-slate">Current monthly revenue</span>
+                  <span className="mono-label text-slate">Current monthly revenue<span className="text-accent">*</span></span>
                   <select name="revenue" required defaultValue="" className={fieldClass}>
                     <option value="" disabled>
                       Select a range
@@ -210,7 +210,7 @@ function Qualify() {
                 </label>
                 <label className="block">
                   <span className="mono-label text-slate">
-                    Are you currently running Meta/Facebook ads?
+                    Are you currently running Meta/Facebook ads?<span className="text-accent">*</span>
                   </span>
                   <select name="ads" required defaultValue="" className={fieldClass}>
                     <option value="" disabled>
@@ -225,9 +225,6 @@ function Qualify() {
                 </label>
               </div>
 
-              <p className="mt-5 font-mono text-[0.68rem] text-slate">
-                All questions are mandatory.
-              </p>
 
               {error && (
                 <p className="mt-4 font-mono text-[0.7rem] text-red-700">{error}</p>
@@ -259,12 +256,6 @@ function Qualify() {
               BookedMoves
             </span>
           </div>
-          <Link
-            to="/qualify"
-            className="border-2 border-paper bg-paper px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-ink transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--green)]"
-          >
-            Apply For The Growth System
-          </Link>
         </div>
         <div className="shell border-t border-paper/20 py-5">
           <p className="font-mono text-[0.7rem] text-paper/60">
