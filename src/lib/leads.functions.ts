@@ -76,7 +76,7 @@ export const submitLead = createServerFn({ method: "POST" })
       .from("leads")
       .insert({
         company_name: data.company,
-        website: data.website,
+        website: data.website || null,
         contact_name: data.name,
         email: data.email,
         whatsapp: data.whatsapp,
