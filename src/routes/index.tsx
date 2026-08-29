@@ -219,6 +219,26 @@ function Landing() {
         </div>
       </section>
 
+      {/* TRACKING PHILOSOPHY */}
+      <section className="border-b-2 border-ink bg-paper">
+        <div className="shell py-10 lg:py-12">
+          <Reveal>
+            <div className="mx-auto max-w-4xl border-2 border-ink bg-white p-6 stamp lg:p-8">
+              <div className="flex flex-wrap items-center gap-3">
+                <Eyebrow>How we measure success</Eyebrow>
+                <span className="mono-label border border-accent bg-accent/10 px-2 py-1 text-accent-dark">
+                  Full funnel tracking
+                </span>
+              </div>
+              <p className="mt-4 text-base leading-relaxed text-ink">
+                We track spend → enquiries → cost per enquiry → qualified enquiries → quotes →
+                bookings. Cheap leads that don&apos;t convert get investigated, not celebrated.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* STAT STRIP */}
       <section className="border-b-2 border-ink bg-paper-2">
         <div className="shell grid grid-cols-2 divide-line lg:grid-cols-4">
