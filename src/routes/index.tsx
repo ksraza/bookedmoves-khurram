@@ -108,23 +108,6 @@ const FIT_NO = [
   "Wants a guaranteed number of booked moves regardless of sales performance",
 ];
 
-const YOUR_JOB = [
-  "Ad spend",
-  "Accurate business information",
-  "Competitive pricing",
-  "Availability and capacity",
-  "Fast lead response",
-  "Sales follow-up",
-  "Closing the enquiry",
-];
-
-const OUR_JOB = [
-  "Building the acquisition system",
-  "Managing the Meta Ads campaigns",
-  "Testing offers, creative and audiences",
-  "Optimising lead quality and cost per enquiry",
-  "Weekly reporting and strategy",
-];
 
 function Landing() {
   return (
@@ -510,47 +493,6 @@ function Landing() {
         </div>
       </section>
 
-      {/* RISK REVERSAL */}
-      <section className="border-b-2 border-ink bg-paper-2">
-        <div className="shell py-16 lg:py-20">
-          <Reveal>
-            <Eyebrow>Risk reversal</Eyebrow>
-            <h2 className="mt-4 text-3xl text-ink">The Optimisation Commitment™</h2>
-            <p className="mt-5 max-w-3xl leading-relaxed text-slate">
-              We won&apos;t promise an arbitrary number of bookings that depends on factors outside
-              our control. If the campaign isn&apos;t producing a clear path toward the agreed
-              performance targets, we continue testing, refining and optimising the acquisition
-              system rather than simply letting an underperforming campaign run.
-            </p>
-          </Reveal>
-          <Reveal delay={80} className="mt-10">
-            <div className="grid border-2 border-ink bg-white lg:grid-cols-2">
-              <div className="border-b border-dashed border-line p-7 lg:border-b-0 lg:border-r">
-                <h3 className="text-xl text-ink">You&apos;re responsible for</h3>
-                <ul className="mt-5 grid gap-3">
-                  {YOUR_JOB.map((f) => (
-                    <li key={f} className="flex items-start gap-3 text-sm">
-                      <span className="mt-[7px] inline-block h-[6px] w-[6px] shrink-0 bg-ink" />
-                      <span className="text-slate">{f}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="p-7">
-                <h3 className="text-xl text-ink">We&apos;re responsible for</h3>
-                <ul className="mt-5 grid gap-3">
-                  {OUR_JOB.map((f) => (
-                    <Check key={f}>{f}</Check>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </Reveal>
-          <div className="mt-8">
-            <CtaButton to="/qualify">Yes, I Want This System</CtaButton>
-          </div>
-        </div>
-      </section>
 
       {/* PROOF SHOT */}
       <section className="border-b-2 border-ink bg-paper-2">
