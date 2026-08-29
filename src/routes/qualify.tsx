@@ -250,7 +250,14 @@ function Qualify() {
       <footer className="border-t border-paper/20">
         <div className="shell py-6">
           <p className="font-mono text-[0.7rem] text-paper/60">
-            bookedmoves.com · Meta Ads for UK moving companies
+            © 2026 BookedMoves. All rights reserved. ·{" "}
+            <Link to="/privacy" className="underline hover:text-paper">
+              Privacy Policy
+            </Link>{" "}
+            ·{" "}
+            <Link to="/privacy" className="underline hover:text-paper">
+              Do Not Sell or Share My Personal Information
+            </Link>
           </p>
         </div>
       </footer>
