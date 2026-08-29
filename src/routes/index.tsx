@@ -485,35 +485,6 @@ function Landing() {
         </div>
       </section>
 
-      {/* RESULTS BULLETS */}
-      <section className="border-b-2 border-ink">
-        <div className="shell py-16 lg:py-20">
-          <Reveal>
-            <div className="flex flex-wrap items-center gap-4">
-              <Eyebrow>What changes</Eyebrow>
-            </div>
-            <h2 className="mt-4 max-w-3xl text-3xl text-ink">Results you can measure</h2>
-          </Reveal>
-          <Reveal delay={80} className="mt-8">
-            <div className="grid gap-px border-2 border-ink bg-line sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                { v: "£8.65", l: "Lowest verified cost per lead" },
-                { v: "1,148+", l: "Leads generated in a single live account" },
-                { v: "11 sec", l: "From lead capture to first contact" },
-                { v: "90 days", l: "To a stable, predictable pipeline" },
-              ].map((r, i) => (
-                <div key={r.l} className="border-b border-line bg-white px-5 py-6 last:border-b-0 sm:border-b-0">
-                  <div className="font-display text-2xl text-ink">{r.v}</div>
-                  <div className="mono-label mt-2 text-slate">{r.l}</div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-          <div className="mt-8">
-            <CtaButton to="/qualify">Book My Strategy Call</CtaButton>
-          </div>
-        </div>
-      </section>
 
       {/* PROOF SHOT */}
       <section className="border-b-2 border-ink bg-paper-2">
