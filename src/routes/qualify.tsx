@@ -1,7 +1,9 @@
 import { LOGO_WHITE_URL } from "@/lib/brand";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
 import { useState, type FormEvent } from "react";
 import { Check, Manifest } from "@/components/funnel/ui";
+import { submitLead } from "@/lib/leads.functions";
 
 export const Route = createFileRoute("/qualify")({
   head: () => ({
@@ -45,10 +47,34 @@ const fieldClass =
 
 function Qualify() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const submitLeadFn = useServerFn(submitLead);
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSent(true);
+    setError(null);
+    setSending(true);
+    const fd = new FormData(e.currentTarget);
+    try {
+      await submitLeadFn({
+        data: {
+          company: String(fd.get("company") ?? ""),
+          website: String(fd.get("website") ?? ""),
+          name: String(fd.get("name") ?? ""),
+          email: String(fd.get("email") ?? ""),
+          whatsapp: String(fd.get("whatsapp") ?? ""),
+          area: String(fd.get("area") ?? ""),
+          revenue: String(fd.get("revenue") ?? ""),
+          ads: String(fd.get("ads") ?? ""),
+        },
+      });
+      setSent(true);
+    } catch {
+      setError("Something went wrong submitting your application. Please try again.");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
@@ -204,11 +230,15 @@ function Qualify() {
                 All questions are mandatory.
               </p>
 
+              {error && (
+                <p className="mt-4 font-mono text-[0.7rem] text-red-700">{error}</p>
+              )}
               <button
                 type="submit"
-                className="mt-7 w-full border-2 border-ink bg-ink px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--accent)]"
+                disabled={sending}
+                className="mt-7 w-full border-2 border-ink bg-ink px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0_0_var(--accent)] disabled:opacity-60"
               >
-                Yes, Build My System
+                {sending ? "Submitting…" : "Yes, Build My System"}
               </button>
               <p className="mt-3 text-center font-mono text-[0.68rem] text-slate">
                 No spam. Your information is never shared.
