@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { FOUNDER_URL, LOGO_URL } from "@/lib/brand";
+import { FOUNDER_URL, LOGO_URL, LOGO_WHITE_URL } from "@/lib/brand";
 import shiftersAllLeads from "@/assets/shifters-all-leads.png.asset.json";
 import adDontBookMoves from "@/assets/ad-dont-book-moves-6-aug.png.asset.json";
 import {
