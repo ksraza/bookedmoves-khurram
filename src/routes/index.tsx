@@ -196,7 +196,7 @@ function Landing() {
               </div>
               <h2 className="mt-4 text-2xl text-ink">The numbers behind the headline</h2>
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-slate">
-                This is the actual Meta Ads Manager report for the campaign that produced the result
+                This is the actual &quot;Meta Ads Manager&quot; report for the campaign that produced the result
                 above — £611.15 in spend, 35 qualified leads and a £17.46 cost per lead.
               </p>
               <div className="mt-6 border-2 border-ink bg-white stamp">
