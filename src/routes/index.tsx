@@ -202,7 +202,7 @@ function Landing() {
               </p>
               <div className="mt-6 border-2 border-ink bg-white stamp">
                 <img
-                  src={adDontBookMoves.url}
+                  src={assetUrl(adDontBookMoves)}
                   alt="Meta Ads Manager report showing £611.15 spend, 34,974 impressions, 688 clicks, 35 leads and £17.46 cost per lead"
                   width={1280}
                   height={400}
@@ -529,7 +529,7 @@ function Landing() {
                 </span>
               </div>
               <img
-                src={shiftersAllLeads.url}
+                src={assetUrl(shiftersAllLeads)}
                 alt="Meta Ads Manager dashboard showing 30 Shifters campaigns, £9,925.65 spend, 653,059 impressions, 11,667 clicks and 1,148 leads"
                 width={1280}
                 height={800}
