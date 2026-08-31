@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FOUNDER_URL, LOGO_URL, LOGO_WHITE_URL } from "@/lib/brand";
+import { assetUrl } from "@/lib/asset";
 import shiftersAllLeads from "@/assets/shifters-all-leads.png.asset.json";
 import adDontBookMoves from "@/assets/ad-dont-book-moves-6-aug.png.asset.json";
 import {
@@ -201,7 +202,7 @@ function Landing() {
               </p>
               <div className="mt-6 border-2 border-ink bg-white stamp">
                 <img
-                  src={adDontBookMoves.url}
+                  src={assetUrl(adDontBookMoves)}
                   alt="Meta Ads Manager report showing £611.15 spend, 34,974 impressions, 688 clicks, 35 leads and £17.46 cost per lead"
                   width={1280}
                   height={400}
@@ -528,7 +529,7 @@ function Landing() {
                 </span>
               </div>
               <img
-                src={shiftersAllLeads.url}
+                src={assetUrl(shiftersAllLeads)}
                 alt="Meta Ads Manager dashboard showing 30 Shifters campaigns, £9,925.65 spend, 653,059 impressions, 11,667 clicks and 1,148 leads"
                 width={1280}
                 height={800}
