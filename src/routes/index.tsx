@@ -138,13 +138,19 @@ function Landing() {
     <div className="min-h-screen bg-paper">
       <header className="border-b-2 border-ink bg-paper">
         <div className="shell flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={LOGO_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
-            <span className="font-display text-lg uppercase tracking-[0.03em] text-ink">
+          <Link to="/" className="flex min-w-0 items-center gap-3">
+            <img
+              src={LOGO_URL}
+              alt="BookedMoves logo"
+              className="h-12 w-12 shrink-0 object-contain sm:h-16 sm:w-16"
+            />
+            <span className="hidden font-display text-lg uppercase tracking-[0.03em] text-ink min-[420px]:inline">
               BookedMoves
             </span>
           </Link>
-          <CtaButton to="/qualify">Apply For The Growth System</CtaButton>
+          <CtaButton to="/qualify" className="px-3 py-2 text-[0.62rem] sm:px-6 sm:py-3 sm:text-[0.72rem]">
+            Apply For The Growth System
+          </CtaButton>
         </div>
       </header>
 
