@@ -23,10 +23,12 @@ export function CtaButton({
   to,
   children,
   variant = "solid",
+  className = "",
 }: {
   to: string;
   children: ReactNode;
   variant?: "solid" | "ghost" | "onDark";
+  className?: string;
 }) {
   const base =
     "inline-flex items-center justify-center border-2 px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px]";
