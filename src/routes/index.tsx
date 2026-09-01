@@ -148,7 +148,7 @@ function Landing() {
               BookedMoves
             </span>
           </Link>
-          <CtaButton to="/qualify" className="px-3 py-2 text-[0.62rem] sm:px-6 sm:py-3 sm:text-[0.72rem]">
+          <CtaButton to="/qualify" className="shrink-0">
             Apply For The Growth System
           </CtaButton>
         </div>
