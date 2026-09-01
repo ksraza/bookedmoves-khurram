@@ -80,14 +80,14 @@ function Qualify() {
   return (
     <div className="min-h-screen bg-ink text-paper">
       <header className="border-b-2 border-paper/25">
-        <div className="shell flex items-center justify-between py-4">
-          <Link to="/" className="flex min-w-0 items-center gap-3">
+        <div className="shell flex items-center justify-between gap-3 py-4">
+          <Link to="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
             <img
               src={LOGO_WHITE_URL}
               alt="BookedMoves logo"
               className="h-12 w-12 shrink-0 object-contain sm:h-16 sm:w-16"
             />
-            <span className="hidden font-display text-lg uppercase tracking-[0.03em] text-paper min-[420px]:inline">
+            <span className="truncate font-display text-base uppercase tracking-[0.03em] text-paper sm:text-lg">
               BookedMoves
             </span>
           </Link>
