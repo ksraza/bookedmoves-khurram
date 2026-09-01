@@ -81,15 +81,19 @@ function Qualify() {
     <div className="min-h-screen bg-ink text-paper">
       <header className="border-b-2 border-paper/25">
         <div className="shell flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={LOGO_WHITE_URL} alt="BookedMoves logo" className="h-16 w-16 object-contain" />
-            <span className="font-display text-lg uppercase tracking-[0.03em] text-paper">
+          <Link to="/" className="flex min-w-0 items-center gap-3">
+            <img
+              src={LOGO_WHITE_URL}
+              alt="BookedMoves logo"
+              className="h-12 w-12 shrink-0 object-contain sm:h-16 sm:w-16"
+            />
+            <span className="hidden font-display text-lg uppercase tracking-[0.03em] text-paper min-[420px]:inline">
               BookedMoves
             </span>
           </Link>
           <Link
             to="/"
-            className="mono-label border-2 border-paper/40 px-4 py-2 text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[5px_5px_0_0_var(--green)]"
+            className="mono-label shrink-0 border-2 border-paper/40 px-4 py-2 text-paper transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[5px_5px_0_0_var(--green)]"
           >
             ← Back
           </Link>
