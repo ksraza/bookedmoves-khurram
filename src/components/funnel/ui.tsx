@@ -31,7 +31,7 @@ export function CtaButton({
   className?: string;
 }) {
   const base =
-    "inline-flex items-center justify-center border-2 px-6 py-3 font-mono text-[0.72rem] uppercase tracking-[0.12em] transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px]";
+    "inline-flex items-center justify-center border-2 px-3 py-2 font-mono text-[0.62rem] uppercase tracking-[0.12em] transition-transform duration-150 hover:-translate-x-[2px] hover:-translate-y-[2px] sm:px-6 sm:py-3 sm:text-[0.72rem]";
   const styles =
     variant === "solid"
       ? "border-ink bg-ink text-paper hover:shadow-[6px_6px_0_0_var(--accent)]"
