@@ -288,10 +288,20 @@ function Landing() {
             <Eyebrow>Who&apos;s running your ads</Eyebrow>
             <h2 className="mt-4 text-3xl text-ink">One operator. One industry.</h2>
             <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-              I&apos;m Khurram, founder of BookedMoves. I run Meta Ads campaigns specifically for
-              moving and relocation companies — no juggling a dozen unrelated industries, no junior
-              account manager touching your campaigns after the pitch call. Every client gets the
-              same person from strategy to daily optimisation: me.
+              I didn&apos;t start out chasing moving companies. I started out running ads for
+              anyone who&apos;d hire me — and burned through a lot of trial and error before I
+              noticed something: the movers I worked with had the same problems, over and over.
+              Cheap leads. Slow follow-up. No system.
+            </p>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+              So I stopped being a generalist. I built one system, for one industry, and got
+              obsessive about making it work. That system is BookedMoves — and I&apos;m Khurram,
+              the person who runs it.
+            </p>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+              No juggling a dozen unrelated industries. No junior account manager touching your
+              campaigns after the pitch call. Every client gets the same person from strategy to
+              daily optimisation: me.
             </p>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
               <Check>Meta Ads specialist</Check>
