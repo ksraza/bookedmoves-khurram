@@ -314,7 +314,7 @@ function Landing() {
               <Check>Direct access — no account handoffs</Check>
               <Check>Weekly performance reporting</Check>
             </ul>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8">
               <CtaButton to="/qualify">Get My Free Audit</CtaButton>
             </div>
           </Reveal>
