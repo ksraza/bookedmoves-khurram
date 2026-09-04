@@ -288,15 +288,20 @@ function Landing() {
             <Eyebrow>Who&apos;s running your ads</Eyebrow>
             <h2 className="mt-4 text-3xl text-ink">One operator. One industry.</h2>
             <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-              I didn&apos;t start out chasing moving companies. I started out running ads for
-              anyone who&apos;d hire me — and burned through a lot of trial and error before I
-              noticed something: the movers I worked with had the same problems, over and over.
-              Cheap leads. Slow follow-up. No system.
+              2019: I lost my job with no severance, no backup plan, and a family — including my
+              kids — counting on me. Freelancing wasn&apos;t a dream project; it was the only option
+              I had left. I taught myself performance marketing from scratch and started running Meta
+              Ads for anyone who&apos;d hire me.
+            </p>
+            <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+              I didn&apos;t start out chasing moving companies. I burned through a lot of trial and
+              error before I noticed something: the movers I worked with had the same problems, over
+              and over. Cheap leads. Slow follow-up. No system.
             </p>
             <p className="mt-4 max-w-2xl leading-relaxed text-slate">
               So I stopped being a generalist. I built one system, for one industry, and got
-              obsessive about making it work. That system is BookedMoves — and I&apos;m Khurram,
-              the person who runs it.
+              obsessive about making it work. That system is BookedMoves — and I&apos;m Khurram, the
+              person who runs it.
             </p>
             <p className="mt-4 max-w-2xl leading-relaxed text-slate">
               No juggling a dozen unrelated industries. No junior account manager touching your
