@@ -4,6 +4,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { useState, type FormEvent } from "react";
 import { Check, Manifest } from "@/components/funnel/ui";
 import { submitLead } from "@/lib/leads.functions";
+import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/qualify")({
   head: () => ({
@@ -56,21 +57,34 @@ function Qualify() {
     setError(null);
     setSending(true);
     const fd = new FormData(e.currentTarget);
+    const application = {
+      company: String(fd.get("company") ?? "").trim(),
+      website: String(fd.get("website") ?? "").trim(),
+      name: String(fd.get("name") ?? "").trim(),
+      email: String(fd.get("email") ?? "").trim(),
+      whatsapp: String(fd.get("whatsapp") ?? "").trim(),
+      area: String(fd.get("area") ?? "").trim(),
+      revenue: String(fd.get("revenue") ?? "").trim(),
+      ads: String(fd.get("ads") ?? "").trim(),
+    };
     try {
-      await submitLeadFn({
-        data: {
-          company: String(fd.get("company") ?? ""),
-          website: String(fd.get("website") ?? ""),
-          name: String(fd.get("name") ?? ""),
-          email: String(fd.get("email") ?? ""),
-          whatsapp: String(fd.get("whatsapp") ?? ""),
-          area: String(fd.get("area") ?? ""),
-          revenue: String(fd.get("revenue") ?? ""),
-          ads: String(fd.get("ads") ?? ""),
-        },
+      const { error: saveError } = await supabase.from("leads").insert({
+        company_name: application.company,
+        website: application.website || null,
+        contact_name: application.name,
+        email: application.email,
+        whatsapp: application.whatsapp,
+        service_area: application.area,
+        revenue: application.revenue,
+        ad_status: application.ads,
       });
+
+      if (saveError) throw saveError;
+
       setSent(true);
-    } catch {
+      void submitLeadFn({ data: application }).catch(() => undefined);
+    } catch (submissionError) {
+      console.error("Lead submission failed", submissionError);
       setError("Something went wrong submitting your application. Please try again.");
     } finally {
       setSending(false);

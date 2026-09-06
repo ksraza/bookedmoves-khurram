@@ -68,32 +68,10 @@ async function notifyOwner(lead: Lead) {
 }
 
 export const submitLead = createServerFn({ method: "POST" })
-  .inputValidator((data) => leadSchema.parse(data))
+  .validator((data) => leadSchema.parse(data))
   .handler(async ({ data }) => {
-    const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
-
-    const { data: lead, error } = await supabaseAdmin
-      .from("leads")
-      .insert({
-        company_name: data.company,
-        website: data.website || null,
-        contact_name: data.name,
-        email: data.email,
-        whatsapp: data.whatsapp,
-        service_area: data.area,
-        revenue: data.revenue,
-        ad_status: data.ads,
-      })
-      .select("id")
-      .single();
-
-    if (error) {
-      console.error("lead insert failed", error);
-      throw new Error("Could not save your application. Please try again.");
-    }
-
-    // Fire-and-forget: a failed notification must never lose a saved lead.
+    // The browser saves the lead first. Notification failure must never make
+    // an already-received application look unsuccessful to the prospect.
     await notifyOwner(data).catch((e) => console.error("notifyOwner error", e));
-
-    return { ok: true as const, id: lead.id };
+    return { ok: true as const };
   });
