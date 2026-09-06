@@ -68,22 +68,21 @@ function Qualify() {
       ads: String(fd.get("ads") ?? "").trim(),
     };
     try {
-      const { error: saveError } = await supabase.from("leads").insert({
-        company_name: application.company,
-        website: application.website || null,
-        contact_name: application.name,
-        email: application.email,
-        whatsapp: application.whatsapp,
-        service_area: application.area,
-        revenue: application.revenue,
-        ad_status: application.ads,
+      // Works from any host (including a static copy served elsewhere):
+      // the lead is saved and the Gmail notification is sent by Lovable's backend.
+      const isLovableHost =
+        typeof window !== "undefined" && window.location.hostname.endsWith("lovable.app");
+      const endpoint = isLovableHost
+        ? "/api/public/lead"
+        : "https://bookedmoves-khurram.lovable.app/api/public/lead";
+
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(application),
       });
+      if (!res.ok) throw new Error(`Submit failed with status ${res.status}`);
 
-      if (saveError) throw saveError;
-
-      // Wait for the server-side notification attempt before this request ends.
-      // The server function absorbs Gmail failures, so a saved lead still succeeds.
-      await submitLeadFn({ data: application });
       setSent(true);
     } catch (submissionError) {
       console.error("Lead submission failed", submissionError);
@@ -92,6 +91,7 @@ function Qualify() {
       setSending(false);
     }
   }
+
 
   return (
     <div className="min-h-screen bg-ink text-paper">
