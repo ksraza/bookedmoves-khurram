@@ -1,10 +1,7 @@
 import { LOGO_WHITE_URL } from "@/lib/brand";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
 import { useState, type FormEvent } from "react";
 import { Check, Manifest } from "@/components/funnel/ui";
-import { submitLead } from "@/lib/leads.functions";
-import { supabase } from "@/integrations/supabase/client";
 
 export const Route = createFileRoute("/qualify")({
   head: () => ({
