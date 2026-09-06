@@ -81,8 +81,10 @@ function Qualify() {
 
       if (saveError) throw saveError;
 
+      // Wait for the server-side notification attempt before this request ends.
+      // The server function absorbs Gmail failures, so a saved lead still succeeds.
+      await submitLeadFn({ data: application });
       setSent(true);
-      void submitLeadFn({ data: application }).catch(() => undefined);
     } catch (submissionError) {
       console.error("Lead submission failed", submissionError);
       setError("Something went wrong submitting your application. Please try again.");
