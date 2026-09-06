@@ -50,7 +50,7 @@ function Qualify() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const submitLeadFn = useServerFn(submitLead);
+  
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
