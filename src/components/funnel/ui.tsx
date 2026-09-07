@@ -21,11 +21,13 @@ export function Eyebrow({
 
 export function CtaButton({
   to,
+  href,
   children,
   variant = "solid",
   className = "",
 }: {
-  to: string;
+  to?: string;
+  href?: string;
   children: ReactNode;
   variant?: "solid" | "ghost" | "onDark";
   className?: string;
@@ -38,8 +40,15 @@ export function CtaButton({
       : variant === "ghost"
         ? "border-ink bg-transparent text-ink hover:shadow-[6px_6px_0_0_var(--accent)]"
         : "border-paper bg-paper text-ink hover:shadow-[6px_6px_0_0_var(--green)]";
+  const cls = `${base} ${styles} ${className}`;
+  if (href)
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={cls}>
+        {children}
+      </a>
+    );
   return (
-    <Link to={to} className={`${base} ${styles}`}>
+    <Link to={to!} className={cls}>
       {children}
     </Link>
   );

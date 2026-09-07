@@ -128,10 +128,10 @@ function Offer() {
                   <tr className="border-t-2 border-ink bg-paper-2">
                     <td className="px-4 py-4 sm:px-6" />
                     <td className="border-l-2 border-ink px-4 py-4 sm:px-6">
-                      <CtaButton to="/qualify">Start With Foundation</CtaButton>
+                      <CtaButton href="/plans/bookedmoves-foundation.pdf">Start With Foundation</CtaButton>
                     </td>
                     <td className="border-l-2 border-ink px-4 py-4 sm:px-6">
-                      <CtaButton to="/qualify">Apply For Growth</CtaButton>
+                      <CtaButton href="/plans/bookedmoves-growth.pdf">Apply For Growth</CtaButton>
                     </td>
                   </tr>
                 </tfoot>
