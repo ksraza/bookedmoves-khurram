@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as OfferRouteImport } from './routes/offer'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as QualifyRouteImport } from './routes/qualify'
 import { Route as ApiPublicLeadRouteImport } from './routes/api/public/lead'
@@ -17,6 +18,11 @@ import { Route as ApiPublicLeadRouteImport } from './routes/api/public/lead'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OfferRoute = OfferRouteImport.update({
+  id: '/offer',
+  path: '/offer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -37,12 +43,14 @@ const ApiPublicLeadRoute = ApiPublicLeadRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/offer': typeof OfferRoute
   '/privacy': typeof PrivacyRoute
   '/qualify': typeof QualifyRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/offer': typeof OfferRoute
   '/privacy': typeof PrivacyRoute
   '/qualify': typeof QualifyRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
@@ -50,20 +58,22 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/offer': typeof OfferRoute
   '/privacy': typeof PrivacyRoute
   '/qualify': typeof QualifyRoute
   '/api/public/lead': typeof ApiPublicLeadRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/privacy' | '/qualify' | '/api/public/lead'
+  fullPaths: '/' | '/offer' | '/privacy' | '/qualify' | '/api/public/lead'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/privacy' | '/qualify' | '/api/public/lead'
-  id: '__root__' | '/' | '/privacy' | '/qualify' | '/api/public/lead'
+  to: '/' | '/offer' | '/privacy' | '/qualify' | '/api/public/lead'
+  id: '__root__' | '/' | '/offer' | '/privacy' | '/qualify' | '/api/public/lead'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  OfferRoute: typeof OfferRoute
   PrivacyRoute: typeof PrivacyRoute
   QualifyRoute: typeof QualifyRoute
   ApiPublicLeadRoute: typeof ApiPublicLeadRoute
@@ -76,6 +86,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/offer': {
+      id: '/offer'
+      path: '/offer'
+      fullPath: '/offer'
+      preLoaderRoute: typeof OfferRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -104,6 +121,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  OfferRoute: OfferRoute,
   PrivacyRoute: PrivacyRoute,
   QualifyRoute: QualifyRoute,
   ApiPublicLeadRoute: ApiPublicLeadRoute,
